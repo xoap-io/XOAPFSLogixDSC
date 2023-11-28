@@ -12,7 +12,7 @@ Please check out common DSC Community [contributing guidelines](https://dsccommu
 
 ## Change log
 
-A full list of changes in each version can be found in the [change log](CHANGELOG.md).
+A full list of changes in each version can be found in the [Releases](https://github.com/xoap-io/XOAPFSLogixDSC/releases).
 
 ## Prerequisites
 
