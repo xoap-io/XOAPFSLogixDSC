@@ -156,8 +156,4 @@ configuration XOAP_FSLogixQuickStartConfiguration
         ValueName = 'VolumeType'
         Ensure = 'Present'
     }
-
-
-
 }
-

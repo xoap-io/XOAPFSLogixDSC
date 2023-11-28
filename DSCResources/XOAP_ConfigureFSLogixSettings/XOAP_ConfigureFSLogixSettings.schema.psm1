@@ -1,4 +1,4 @@
-configuration XOAP_ConfigureFSLogixSettings
+configuration 'XOAP_ConfigureFSLogixSettings'
 {
     param(
         [Parameter(Mandatory = $true)]
@@ -17,7 +17,6 @@ configuration XOAP_ConfigureFSLogixSettings
     
     Import-DscResource -ModuleName 'PSDesiredStateConfiguration' -ModuleVersion '1.1'
 
-    
     Registry  'HKLM:\SOFTWARE\FSLogix\Profiles\DeleteLocalProfileWhenVHDShouldApply'
     {
         ValueData = 1
@@ -125,8 +124,4 @@ configuration XOAP_ConfigureFSLogixSettings
         ValueName = 'VolumeType'
         Ensure = 'Present'
     } 
-
-
-
 }
-

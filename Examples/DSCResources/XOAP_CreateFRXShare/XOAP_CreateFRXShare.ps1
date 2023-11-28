@@ -22,5 +22,4 @@ Configuration 'XOAPFSLogixDSC'
             }
 	    }
 }
-
 XOAPFSLogixDSC -OutputPath 'C:\XOAPFSLogixDSC'

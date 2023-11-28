@@ -1,4 +1,4 @@
-configuration XOAP_AddToRemoteDesktopUsersGroup
+configuration 'XOAP_AddToRemoteDesktopUsersGroup'
 {
     param(
         [Parameter(Mandatory = $true)]
@@ -44,8 +44,4 @@ configuration XOAP_AddToRemoteDesktopUsersGroup
                 else {return $true}
             }
         }
-
-
-
 }
-

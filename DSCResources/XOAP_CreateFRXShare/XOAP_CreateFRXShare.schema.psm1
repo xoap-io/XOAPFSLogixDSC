@@ -71,6 +71,4 @@ configuration XOAP_CreateFRXShare
             }
         )
     }
-
 }
-
