@@ -136,3 +136,21 @@ Configuration 'XOAP_CreateFRXShare'
 }
 XOAP_CreateFRXShare
 ```
+
+### Quick configuration
+
+```PowerShell
+Configuration 'XOAP_FSLogixQuickStartConfiguration'
+{
+    Import-DscResource -ModuleName 'XOAPFSLogixDSC' -Name 'XOAP_FSLogixQuickStartConfiguration' -ModuleVersion '1.0.0'
+    
+    XOAP_FSLogixQuickStartConfiguration 'Example'
+    {
+	    RemoteDesktopUsersMember [String]= 'ExampleGroup@domain.com'
+	    Domain [String]= 'domain.com'
+        RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
+        ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
+    }
+}
+XOAP_FSLogixQuickStartConfiguration
+```
