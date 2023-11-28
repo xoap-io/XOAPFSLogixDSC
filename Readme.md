@@ -111,9 +111,9 @@ Configuration 'XOAP_ConfigureFSLogixSettings'
     {
 	    dynamicVHDx [String]= '1'
 	    SizeInMBs [Int32]= '30000'
-        RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
-        ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
-        VolumeType [String]= 'VHDX'
+            RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
+            ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
+            VolumeType [String]= 'VHDX'
     }
 }
 XOAP_ConfigureFSLogixSettings
@@ -130,8 +130,8 @@ Configuration 'XOAP_CreateFRXShare'
     {
 	    ShareName [String]= 'Example'
 	    ShareFullPath [String]= 'C:\Example'
-        ModifyPermissionAccountOnSMBShare [String]= 'example@domian.com'
-        Domain [String]= 'domain.com'
+            ModifyPermissionAccountOnSMBShare [String]= 'example@domian.com'
+            Domain [String]= 'domain.com'
     }
 }
 XOAP_CreateFRXShare
@@ -148,8 +148,8 @@ Configuration 'XOAP_FSLogixQuickStartConfiguration'
     {
 	    RemoteDesktopUsersMember [String]= 'ExampleGroup@domain.com'
 	    Domain [String]= 'domain.com'
-        RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
-        ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
+            RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
+            ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
     }
 }
 XOAP_FSLogixQuickStartConfiguration
