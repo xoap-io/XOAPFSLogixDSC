@@ -111,9 +111,9 @@ Configuration 'XOAP_ConfigureFSLogixSettings'
     {
 	    dynamicVHDx [String]= '1'
 	    SizeInMBs [Int32]= '30000'
-      RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
-      ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
-      VolumeType [String]= 'VHDX'
+        RedirXMLSourceFolder [String]= '\\ExampleShare\RedirXMLSourceFolder'
+        ProfileDiskLocation [String]= '\\ExampleShare\ProfileDiskLocation'
+        VolumeType [String]= 'VHDX'
     }
 }
 XOAP_ConfigureFSLogixSettings
@@ -130,40 +130,9 @@ Configuration 'XOAP_CreateFRXShare'
     {
 	    ShareName [String]= 'Example'
 	    ShareFullPath [String]= 'C:\Example'
-      ModifyPermissionAccountOnSMBShare [String]= 'example@domian.com'
-      Domain [String]= 'domain.com'
+        ModifyPermissionAccountOnSMBShare [String]= 'example@domian.com'
+        Domain [String]= 'domain.com'
     }
 }
 XOAP_CreateFRXShare
 ```
-
-## Create new DSC modules
-
-Modules will be automatically created once you are creating a new DSC resource.
-
-## Create new DSC resources
-
-DSC resources can easily be deployed via the invocation of
-
-```powershell
-.\New-CompositeResource.ps1
-```
-
-with parameters
-
-```powershell
-.\New-CompositeResource.ps1 -Module XOAPModuleTemplateDSC -Version 0.0.1 -Resource ScheduledTasks
-```
-
-The parameter list is as followed:
-
-| Parameter | Description                            | Note |
-|-----------|----------------------------------------|------|
-| Module    | Name of the outer module part          | -    |
-| Version   | Target version of the module           | -    |
-| Ressource | The name of the ressource /config part | -    |
-
-### Examples
-
-You can review the [Examples](/Examples/Resources) directory in the **XOAPModuleTemplateDSC** module
-for some general use scenarios for all the resources that are in the module.
